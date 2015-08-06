@@ -1,7 +1,21 @@
 'use strict'; 
 var pw = angular.module('patternWarehouse', ['ngAnimate']);
 pw.controller('patternController', function($scope){
-  
+$(document).ready(function(){ 
+    $('.image-item').on('click', function(){
+        $('.sample').css('background', 'url('+$(this).attr('ng-src')+')');
+         $('.sample').fadeIn();
+        });
+    
+     $('.close-btn').on('click', function(){
+        $('.sample').css('background', '#FFF');
+         $('.sample').fadeOut();
+        });
+    }); 
+    
+ 
+    
+   
     
         $scope.collection = [{
        image: '../assets/collection/01.jpg',

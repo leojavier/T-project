@@ -40,12 +40,14 @@
         <section class="container">
           <hr>
            <article ng-animate=" 'animate' " class="item"ng-repeat="item in collection | filter: keyword ">
-               <img ng-src="{{item.image}}" alt="">
+               <img class="image-item" ng-src="{{item.image}}" alt="">
                 <p>{{item.keywords}}</p>
            </article>
         </section>                              
     </section>
-
+    <div class="sample">
+        <div class="close-btn">X</div>
+    </div>
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
