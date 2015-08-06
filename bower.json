@@ -1,0 +1,12 @@
+{
+  "name": "pw",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "~3.2.0",
+    "angular": "~1.4.3",
+    "font-awesome": "~4.4.0",
+    "modernizr": "~2.8.3",
+    "angular-animate": "~1.4.3",
+    "ngInfiniteScroll": "~1.2.1"
+  }
+}

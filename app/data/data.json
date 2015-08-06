@@ -1,0 +1,7 @@
+[{
+       image: '../assets/collection/01.jpg',
+       keywords: 'floral,topinambur,yellow,flower'
+   },{
+       image: '../assets/collection/02.jpg',
+       keywords: 'floral,flower,blue'
+   }]
