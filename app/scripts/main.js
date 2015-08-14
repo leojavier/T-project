@@ -2,6 +2,13 @@
 var pw = angular.module('patternWarehouse', ['ngAnimate']);
 pw.controller('patternController', function($scope){
 $(document).ready(function(){ 
+    
+    $scope.loadItem = function(e){
+        console.log(e);
+        $('.sample').css('background', 'url('+e.item.image.toString()+')');
+         $('.sample').fadeIn();
+    }
+    
     $('.image-item').on('click', function(){
         $('.sample').css('background', 'url('+$(this).attr('ng-src')+')');
          $('.sample').fadeIn();
