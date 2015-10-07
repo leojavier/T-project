@@ -1,10 +1,8 @@
 'use strict'; 
 var pw = angular.module('patternWarehouse', ['ngAnimate']);
 pw.controller('patternController', function($scope){
-$(document).ready(function(){ 
     
     $scope.loadItem = function(e){
-        console.log(e);
         $('.sample').css('background', 'url('+e.item.image.toString()+')');
          $('.sample').fadeIn();
     }
@@ -18,13 +16,9 @@ $(document).ready(function(){
         $('.sample').css('background', '#FFF');
          $('.sample').fadeOut();
         });
-    }); 
+
     
- 
-    
-   
-    
-        $scope.collection = [{
+    $scope.collection = [{
        image: '../assets/collection/01.jpg',
        keywords: 'floral,topinambur,yellow,flower'
        },
