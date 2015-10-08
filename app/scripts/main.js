@@ -16,7 +16,7 @@ pw.controller('patternController', function($scope){
         $('.sample').css('background', '#FFF');
          $('.sample').fadeOut();
         });
-
+ 
     
     $scope.collection = [{
        image: '../assets/collection/01.jpg',
